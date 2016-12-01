@@ -17,10 +17,7 @@ public class Carre extends Losange{
 	* pour calculer le périmètre des carres
 	*/
 	public void calculerPerimetre() {
-		perimetre =(4*dimensionCote1);
 		System.out.println("le périmètre du carré est : " + "perimetre");
 	}	
-	
-	
 	
 }

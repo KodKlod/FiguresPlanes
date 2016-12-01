@@ -23,9 +23,15 @@ public abstract class Losange extends Quadrilatere {
 	/** Méthode
 	* pour calculer le périmètre des losanges
 	*/
+	@Override
 	public void calculerPerimetre() {
 		perimetre =(4*dimensionCote1);
 		System.out.println("le périmètre du losange est : " + "perimetre");
 	}
 
+	@Override
+	public void calculerSurface (){
+		surface = dimensionCote1*dimensionCote1;
+	}
+	
 }

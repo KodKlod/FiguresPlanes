@@ -28,9 +28,15 @@ public class Rectangle extends Quadrilatere{
 	/** Méthode
 	* pour calculer le périmètre des rectangles
 	*/
+	@Override
 	public void calculerPerimetre(){
 		perimetre =(2*dimensionCote1)+(2*dimensionCote2);
 		System.out.println("le périmètre du rectangle est : " + "perimetre");
+	}
+
+	@Override
+	public void calculerSurface () {
+		surface = dimensionCote1*dimensionCote2;
 	}
 
 }
