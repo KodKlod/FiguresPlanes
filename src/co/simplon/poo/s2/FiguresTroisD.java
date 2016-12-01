@@ -3,44 +3,68 @@ package co.simplon.poo.s2;
 public abstract class FiguresTroisD {
 
 	public int nbAretes;
-	protected int dimensionCote1;
+	protected int dimensionArete1;
 	public double perimetre;
+	public int surface;
 
 	
 	/**
 	 * Constructeur de FiguresTroisD
 	 * Pour permettre l'instanciation de la classe
 	 */
-	public FiguresTroisD(int nbCotes) {
+	public FiguresTroisD(int nbAretes) {
 		super();
 		this.nbAretes = nbAretes;
 	}	
 	
 
-
 	/*Getters et Setters
 	 * 
 	 */
-	protected int getDimensionCote1() {
-		return dimensionCote1;
+	  	protected int getNbAretes() {
+		return nbAretes;
 	}
 
-	protected void setDimensionCote1(int dimensionCote1) {
-		this.dimensionCote1 = dimensionCote1;
+
+	protected void setNbAretes(int nbAretes) {
+		this.nbAretes = nbAretes;
 	}
 
-	public int getNbCotes() {
-		return nbCotes;
+
+	protected int getDimensionArete1() {
+		return dimensionArete1;
 	}
-	
-	protected void setNbCotes(int nbCotes) {
-		this.nbCotes = nbCotes;
+
+
+	protected void setDimensionArete1(int dimensionArete1) {
+		this.dimensionArete1 = dimensionArete1;
 	}
-	
-  	/** Méthode
-	* pour calculer le périmètre des différentes figures
+
+
+	protected double getPerimetre() {
+		return perimetre;
+	}
+
+
+	protected void setPerimetre(double perimetre) {
+		this.perimetre = perimetre;
+	}
+
+
+	protected int getSurface() {
+		return surface;
+	}
+
+
+	protected void setSurface(int surface) {
+		this.surface = surface;
+	}
+
+
+	/** Méthode
+	* pour calculer la surface des différentes figures 3D
 	*/
-	public abstract void calculerPerimetre();
+	public abstract void calculerSurface();
 
 }
 	
