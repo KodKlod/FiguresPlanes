@@ -8,6 +8,9 @@ public class TestCarre {
 
 	@Test
 	public void testCalculerPerimetre() {
+		
+		
+		
 		fail("Not yet implemented");
 	}
 
@@ -16,4 +19,9 @@ public class TestCarre {
 		fail("Not yet implemented");
 	}
 
+	@Test
+	public void testCalculerSurface() {
+		fail("Not yet implemented");
+	}
+	
 }
